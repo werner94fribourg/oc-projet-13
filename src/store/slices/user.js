@@ -21,8 +21,9 @@ const userSlice = createSlice({
       state.lastName = user.lastName;
     },
     modifyUser(state, action) {
-      state.firstName = action.firstName;
-      state.lastName = action.lastName;
+      const user = action.payload;
+      state.firstName = user.firstName;
+      state.lastName = user.lastName;
     },
     resetUser(state) {
       state.id = '';
