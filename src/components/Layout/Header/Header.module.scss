@@ -1,0 +1,33 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  &__router-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__nav-item {
+    margin-right: 0.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.6rem;
+    &.active {
+      color: #42b983;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-image {
+    max-width: 100%;
+    width: 20rem;
+  }
+}
