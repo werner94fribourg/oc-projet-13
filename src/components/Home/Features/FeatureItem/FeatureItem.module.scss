@@ -1,0 +1,19 @@
+.feature {
+  flex: 1;
+  padding: 4rem;
+  &__icon {
+    width: 10rem;
+    border: 1rem solid #00bc77;
+    border-radius: 50%;
+    padding: 1.6rem;
+  }
+  &__title {
+    color: #222;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+  }
+}

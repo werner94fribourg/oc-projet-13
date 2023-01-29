@@ -1,0 +1,9 @@
+@import '../../../scss/abstracts/mixins';
+
+.features {
+  display: flex;
+  flex-direction: column;
+  @include respondMin(57.5) {
+    flex-direction: row;
+  }
+}

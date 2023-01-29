@@ -9,6 +9,7 @@ import styles from './Header.module.scss';
 
 const Header = () => {
   const auth = useSelector(state => state.auth);
+  const user = useSelector(state => state.user);
   const dispatch = useDispatch();
 
   const signOutHandler = () => {
@@ -35,7 +36,7 @@ const Header = () => {
               className={`${styles['header-nav__router-link']} ${styles['header-nav__nav-item']}`}
               to="/profile"
             >
-              <FontAwesomeIcon icon={faUserCircle} /> Tony
+              <FontAwesomeIcon icon={faUserCircle} /> {user.firstName}
             </NavLink>
             <NavLink
               className={`${styles['header-nav__router-link']} ${styles['header-nav__nav-item']}`}

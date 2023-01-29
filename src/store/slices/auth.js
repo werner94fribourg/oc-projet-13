@@ -26,7 +26,7 @@ export default authReducer;
 
 export const connect = async (credentials, dispatch) => {
   const data = await login(credentials);
-  if (data.invalid) return;
+  if (data.invalid) return data;
 
   dispatch(authActions.login(data.token));
   localStorage.setItem('token', data.token);
