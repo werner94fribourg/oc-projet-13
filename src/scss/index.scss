@@ -18,6 +18,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  @include respond(tab-portrait) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -25,6 +28,12 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  @include respond(tab-portrait) {
+    &[data-index='true'] {
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
 }
 
 .sr-only {

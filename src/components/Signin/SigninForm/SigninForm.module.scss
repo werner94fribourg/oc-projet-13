@@ -2,8 +2,10 @@
   box-sizing: border-box;
   background-color: white;
   width: 30rem;
-  margin: 0 auto;
-  margin-top: 4.8rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 3.2rem;
   &__icon {
     font-size: 8rem;

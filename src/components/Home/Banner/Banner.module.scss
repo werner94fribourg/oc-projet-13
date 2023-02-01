@@ -5,41 +5,43 @@
   background-position: 0 -5rem;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30rem;
+  height: 40rem;
+  background-position: 0% 33%;
   position: relative;
-  @include respondMin(57.5) {
-    height: 40rem;
-    background-position: 0% 33%;
+  @include respond(tab-portrait) {
+    height: 30rem;
+    background-position: 0% 0%;
   }
   &__content {
-    position: relative;
-    top: 3.2rem;
-    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    width: 30rem;
+    margin: 3.2rem;
     background: white;
     padding: 3.2rem;
     text-align: left;
-    margin: 0 auto;
-    @include respondMin(57.5) {
-      position: absolute;
-      top: 5rem;
-      right: 5rem;
-      width: 30rem;
-      margin: 3.2rem;
+    @include respond(tab-portrait) {
+      position: relative;
+      top: 8.2rem;
+      left: 10%;
+      width: 20rem;
+      margin: 0 auto;
     }
   }
   &__content-subtitle {
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     margin: 0;
-    @include respondMin(57.5) {
-      font-size: 2.4rem;
+    @include respond(tab-portrait) {
+      font-size: 1.6rem;
     }
   }
   &__content-text {
     margin-bottom: 0;
-    font-size: 1.44rem;
-    @include respondMin(57.5) {
-      font-size: 1.92rem;
+    font-size: 1.92rem;
+    @include respond(tab-portrait) {
+      font-size: 1.44rem;
     }
   }
 }

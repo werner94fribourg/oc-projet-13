@@ -2,8 +2,10 @@
 
 .features {
   display: flex;
-  flex-direction: column;
-  @include respondMin(57.5) {
-    flex-direction: row;
+  flex-direction: row;
+  @include respond(tab-portrait) {
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }

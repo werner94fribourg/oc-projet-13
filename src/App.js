@@ -10,6 +10,7 @@ function App() {
   useEffect(() => {
     getTokenFromStore(dispatch);
   }, [dispatch]);
+
   return (
     <Layout>
       <AppRouter />
